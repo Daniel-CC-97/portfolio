@@ -53,7 +53,6 @@ const VideoBackground: React.FC = () => {
             muted
             loop
             className="fixed right-0 bottom-0 min-w-full min-h-full z-[-1] object-cover"
-            data-video="your-custom-data"
             key={currentVideo} // Ensure React re-renders the video element when src changes
         >
             <source src={currentVideo} type="video/mp4" />
