@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const VideoBackground: React.FC = () => {
     const VIDEOS: Record<number, string> = {
         0: '/videos/purple-stars.mp4',
-        1: '/videos/purple-waves.mp4'
+        1: '/videos/purple-smoke.mp4'
     };
 
     const [currentVideo, setCurrentVideo] = useState(VIDEOS[0]);
@@ -17,16 +17,12 @@ const VideoBackground: React.FC = () => {
             const maxScroll = document.body.scrollHeight - window.innerHeight;
             const decreasingOpacity = 1 - ((scrollTop / maxScroll) * 2);
             const increasingOpacity = decreasingOpacity * -1;
-
-            console.log('increasingOpactiy: ', increasingOpacity);
             
 
             // Determine when to switch to the next video
             if (decreasingOpacity < 0.1) {
-                console.log('Switching to second video');
                 setVideoNumber(1);
             } else if (increasingOpacity < 0.1) {
-                console.log('Switching to first video');
                 setVideoNumber(0);
             }
 
