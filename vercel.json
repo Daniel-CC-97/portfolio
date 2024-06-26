@@ -1,14 +1,7 @@
 {
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/node"
-      }
-    ],
-    "build": {
-      "env": {
-        "GIT_LFS_SKIP_SMUDGE": "1"
-      }
+    "env": {
+      "GIT_LFS_SKIP_SMUDGE": "1"
     }
   }
+  
   
