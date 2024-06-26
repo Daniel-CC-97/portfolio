@@ -1,11 +1,13 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-import { getVideos } from '@/app/lib/contentful';
+import { getVideos } from '@/app/lib/contentful'; // Assuming Video type is defined in contentful lib
 
-const VideoBackground: React.FC = () => {
-    const [videoNumber, setVideoNumber] = useState(0);
-    const [videos, setVideos] = useState([]);
+interface VideoBackgroundProps {}
+
+const VideoBackground: React.FC<VideoBackgroundProps> = () => {
+    const [videoNumber, setVideoNumber] = useState<number>(0); // Specify type for videoNumber
+    const [videos, setVideos] = useState<any>([]); // Specify type for videos as an array of Video objects
 
     useEffect(() => {
         const fetchVideos = async () => {
@@ -41,9 +43,9 @@ const VideoBackground: React.FC = () => {
             const video = document.querySelector('video');
             if (video) {
                 if (videoNumber % 2 === 0) {
-                    video.style.opacity = decreasingOpacity.toString();
+                    (video as HTMLVideoElement).style.opacity = decreasingOpacity.toString();
                 } else {
-                    video.style.opacity = increasingOpacity.toString();
+                    (video as HTMLVideoElement).style.opacity = increasingOpacity.toString();
                 }
             }
         };
@@ -73,4 +75,5 @@ const VideoBackground: React.FC = () => {
 };
 
 export default VideoBackground;
+
 
