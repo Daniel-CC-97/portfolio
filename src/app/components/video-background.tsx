@@ -1,15 +1,29 @@
 'use client'
 
 import { useEffect, useState } from 'react';
+import { getVideos } from '@/app/lib/contentful';
 
 const VideoBackground: React.FC = () => {
-    const VIDEOS: Record<number, string> = {
-        0: '/videos/purple-stars.mp4',
-        1: '/videos/purple-smoke.mp4'
-    };
-
-    const [currentVideo, setCurrentVideo] = useState(VIDEOS[0]);
     const [videoNumber, setVideoNumber] = useState(0);
+    const [videos, setVideos] = useState([]);
+
+    useEffect(() => {
+        const fetchVideos = async () => {
+            try {
+                const allVideos = await getVideos();
+                setVideos(allVideos);
+            } catch (error) {
+                console.error('Error fetching videos:', error);
+            }
+        };
+
+        fetchVideos();
+    }, []);
+
+    // Scroll to top when videos state changes or component mounts
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [videos]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,9 +31,7 @@ const VideoBackground: React.FC = () => {
             const maxScroll = document.body.scrollHeight - window.innerHeight;
             const decreasingOpacity = 1 - ((scrollTop / maxScroll) * 2);
             const increasingOpacity = decreasingOpacity * -1;
-            
 
-            // Determine when to switch to the next video
             if (decreasingOpacity < 0.1) {
                 setVideoNumber(1);
             } else if (increasingOpacity < 0.1) {
@@ -28,7 +40,6 @@ const VideoBackground: React.FC = () => {
 
             const video = document.querySelector('video');
             if (video) {
-                // Apply opacity based on videoNumber
                 if (videoNumber % 2 === 0) {
                     video.style.opacity = decreasingOpacity.toString();
                 } else {
@@ -41,31 +52,25 @@ const VideoBackground: React.FC = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [videoNumber]); // Effect depends on videoNumber
-
-    useEffect(() => {
-        setCurrentVideo(VIDEOS[videoNumber]); // Update currentVideo when videoNumber changes
-    }, [videoNumber]); // Effect depends on videoNumber
+    }, [videoNumber]);
 
     return (
-        <video
-            autoPlay
-            muted
-            loop
-            className="fixed right-0 bottom-0 min-w-full min-h-full z-[-1] object-cover"
-            key={currentVideo} // Ensure React re-renders the video element when src changes
-        >
-            <source src={currentVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
+        <>
+            {videos.length > 0 && (
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    className="fixed right-0 bottom-0 min-w-full min-h-full z-[-1] object-cover"
+                    key={videos[videoNumber].fields.video.fields.file.url}
+                >
+                    <source src={videos[videoNumber].fields.video.fields.file.url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            )}
+        </>
     );
 };
 
 export default VideoBackground;
-
-
-
-
-
-
 
