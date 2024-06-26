@@ -1,3 +1,1 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
-public/videos/purple-waves.mp4 filter=lfs diff=lfs merge=lfs -text
-public/videos/purple-animation.mp4 filter=lfs diff=lfs merge=lfs -text
