@@ -1,0 +1,21 @@
+{
+    "title": "The ICC",
+    "summary": "Heavily involved in the migration of their main website from vanilla JavaScript to Preact, enhancing performance and maintainability.* Developed a fully customizable white-label site framework, allowing ICC to tailor it for each specific tournament and event.* Designed and implemented Criiio, a microsite aimed at promoting cricket among children, fostering engagement and participation.",
+    "imageUrl": "/images/ICC-logo.webp",
+    "backgroundColor": "#00175F",
+    "primaryColor": "#FA0CEB",
+    "primaryColorLight": "#FFB5D6",
+    "techStack": [
+        "Preact",
+        "JavaScript",
+        "RestAPI",
+        "Figma",
+        "SCSS",
+        "Animate.css",
+        "Git",
+        "BitBucket",
+        "Agile",
+        "Jira"
+    ]
+  }
+  
