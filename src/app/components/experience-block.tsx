@@ -10,12 +10,13 @@ interface ExperienceBlockProps {
     primaryColorLight: string;
     backgroundColor: string;
     techStack: string[];
+    link: string;
 }
 
-const ExperienceBlock: React.FC<ExperienceBlockProps> = ({ imageUrl, title, summary, primaryColor, primaryColorLight, backgroundColor, techStack }) => {
+const ExperienceBlock: React.FC<ExperienceBlockProps> = ({ imageUrl, title, summary, primaryColor, primaryColorLight, backgroundColor, techStack, link }) => {
     return (
-        <div className="w-full h-full">
-            <h1 className="font-bold text-4xl" style={{ color: primaryColor }}>{title}</h1>
+        <div className="w-full px-8 lg:px-48 py-16" style={{ backgroundColor: backgroundColor }}>
+            <a  href={link} target="/" className="font-bold text-4xl" style={{ color: primaryColor }}>{title}</a>
             <div className="lg:flex justify-between pt-4 gap-4 items-center">
                 <TextWithLineBreaks text={summary}></TextWithLineBreaks>
                 <div className="hidden lg:block">
