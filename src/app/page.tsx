@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         </nav>
 
         <div>
-          <section ref={(el) => { sectionRefs.current[0] = el; }} className="page flex min-h-screen items-center justify-center px-8 lg:px-48">
+          <section ref={(el) => { sectionRefs.current[0] = el; }} className="page flex min-h-screen items-center justify-center px-8 pr-20 lg:px-48">
             <div>
               <h1 className="text-5xl mb-3">
                 Hi, my name is{' '}
