@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { NextPage } from 'next';
 import ExperienceBlock from './components/experience-block';
 
@@ -9,57 +9,47 @@ import premData from './data/prem.json';
 import iccData from './data/icc.json';
 
 const Home: NextPage = () => {
-  const sectionRefs = useRef<(HTMLElement | null)[]>([]);
+  const [opacity, setOpacity] = useState(1);
 
-  const sectionsData = [avonvaleData, premData, iccData];
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const maxScroll = window.innerHeight; // Maximum scroll value to fully fade out the first section
+      const newOpacity = 1 - scrollTop / maxScroll;
+      setOpacity(Math.max(newOpacity, 0)); // Ensure opacity doesn't go below 0
+    };
 
-  const scrollToSection = (index: number) => {
-    if (index >= 0 && index < sectionRefs.current.length) {
-      sectionRefs.current[index]?.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
       <div>
-        <nav className="fixed h-full top-0 right-0 flex flex-col justify-center gap-8 p-4 z-10">
-          <button
-            className="mx-2 px-4 py-2 font-bold rounded-lg bg-violet-400 text-black"
-            onClick={() => scrollToSection(0)}
-          >
-            1
-          </button>
+        <section 
+          className="page flex min-h-screen items-center z-0 justify-center px-8 lg:px-48" 
+          style={{ position: 'fixed', top: 0, left: 0, width: '100%', opacity: opacity, transition: 'opacity 0.2s' }}
+        >
+          <div>
+            <h1 className="text-5xl mb-3">
+              Hi, my name is{' '}
+              <span className="text-violet-400 text-7xl font-semibold">Daniel</span>
+            </h1>
+            <p className="text-lg">
+              I am a skilled frontend developer specializing in JavaScript technologies,
+              particularly React, React Native, and TypeScript. With a focus on creating
+              dynamic and user-friendly applications, I bring expertise in building scalable
+              web and mobile solutions. Passionate about innovation, I strive to deliver
+              high-quality, impactful digital experiences.
+            </p>
+          </div>
+        </section>
 
-          {sectionsData.map((section, index) => (
-            <button
-              key={index}
-              className="mx-2 px-4 py-2 font-bold rounded-lg"
-              style={{ backgroundColor: section.primaryColor, color: section.backgroundColor }}
-              onClick={() => scrollToSection(index + 1)}
-            >
-              {index + 2}
-            </button>
-          ))}
-        </nav>
-
-        <div>
-          <section ref={(el) => { sectionRefs.current[0] = el; }} className="page flex min-h-screen items-center justify-center px-8 pr-20 lg:px-48">
-            <div>
-              <h1 className="text-5xl mb-3">
-                Hi, my name is{' '}
-                <span className="text-violet-400 text-7xl font-semibold">Daniel</span>
-              </h1>
-              <p className="text-lg">
-                I am a skilled frontend developer specializing in JavaScript technologies,
-                particularly React, React Native, and TypeScript. With a focus on creating
-                dynamic and user-friendly applications, I bring expertise in building scalable
-                web and mobile solutions. Passionate about innovation, I strive to deliver
-                high-quality, impactful digital experiences.
-              </p>
-            </div>
-          </section>
-
-          <section ref={(el) => { sectionRefs.current[1] = el; }} className="page flex items-center justify-center">
+        <div className='relative z-1'>
+          <section className="page flex items-center justify-center" style={{ marginTop: '100vh' }}>
             <ExperienceBlock
               title={avonvaleData.title}
               summary={avonvaleData.summary}
@@ -72,7 +62,7 @@ const Home: NextPage = () => {
             />
           </section>
 
-          <section ref={(el) => { sectionRefs.current[2] = el; }} className="page flex items-center justify-center">
+          <section className="page flex items-center justify-center">
             <ExperienceBlock
               title={premData.title}
               summary={premData.summary}
@@ -85,7 +75,7 @@ const Home: NextPage = () => {
             />
           </section>
 
-          <section ref={(el) => { sectionRefs.current[3] = el; }} className="page flex items-center justify-center">
+          <section className="page flex items-center justify-center">
             <ExperienceBlock
               title={iccData.title}
               summary={iccData.summary}
@@ -97,6 +87,7 @@ const Home: NextPage = () => {
               link={iccData.link}
             />
           </section>
+
         </div>
       </div>
     </>
@@ -104,7 +95,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
-
-
-
