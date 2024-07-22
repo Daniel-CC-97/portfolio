@@ -40,6 +40,7 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
                     initial={{ opacity: 0, x: alignLeft ? -50 : 50, scale: 0.9 }} // Start animation from left or right with scale
                     whileInView={{ opacity: 1, x: 0, scale: 1 }} // Animate to original position with scale
                     transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true }} // Ensure animation happens only once
                 >
                     {title}
                 </motion.a>
@@ -49,6 +50,7 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
                         initial={{ opacity: 0, x: alignLeft ? -50 : 50, rotate: alignLeft ? -10 : 10 }} // Start animation from left or right with rotation
                         whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Animate to original position with rotation
                         transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true }} // Ensure animation happens only once
                     >
                         <a href={link} target="_blank">
                             <Image
@@ -66,6 +68,7 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
                         initial={{ opacity: 0, x: alignLeft ? -50 : 50, skewX: alignLeft ? -10 : 10 }} // Start animation from left or right with skew
                         whileInView={{ opacity: 1, x: 0, skewX: 0 }} // Animate to original position with skew
                         transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true }} // Ensure animation happens only once
                     >
                         <TextWithLineBreaks text={summary} alignLeft={alignLeft} />
                     </motion.div>
@@ -75,6 +78,7 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
                     initial={{ opacity: 0, x: alignLeft ? -50 : 50, y: 20 }} // Start animation from left or right with y-axis offset
                     whileInView={{ opacity: 1, x: 0, y: 0 }} // Animate to original position with y-axis offset
                     transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true }} // Ensure animation happens only once
                 >
                     <TechStack techStack={techStack} backgroundColor={primaryColorLight} color={backgroundColor} alignLeft={alignLeft} />
                 </motion.div>
@@ -84,8 +88,3 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
 };
 
 export default ExperienceBlock;
-
-
-
-
-

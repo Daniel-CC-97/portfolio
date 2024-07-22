@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div>
+      <div className='overflow-hidden'>
         <section 
           className="page fixed w-screen top-0 left-0 w-full flex min-h-screen items-center justify-center px-8 lg:px-48"
           style={{ height: '100vh', overflow: 'hidden', opacity: opacity, transition: 'opacity 0.2s' }}
@@ -63,6 +63,8 @@ const Home: NextPage = () => {
               autoPlay
               muted
               loop
+              playsInline // Ensure the video plays inline on mobile
+              controls={false} // Hide controls
               ref={(video) => {
                 if (video) video.playbackRate = 0.8; // Set the playback rate directly
               }}
@@ -138,4 +140,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-

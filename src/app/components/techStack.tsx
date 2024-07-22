@@ -20,8 +20,8 @@ const TechStack: React.FC<TechStackProps> = ({ techStack, backgroundColor, color
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
     };
 
     return (
@@ -30,6 +30,7 @@ const TechStack: React.FC<TechStackProps> = ({ techStack, backgroundColor, color
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }} // Ensure animation happens only once
         >
             {techStack.map((tech, index) => (
                 <motion.h4
@@ -44,6 +45,7 @@ const TechStack: React.FC<TechStackProps> = ({ techStack, backgroundColor, color
                         scale: 1.05,
                         boxShadow: '0 10px 20px rgba(0, 0, 0, 0.4)', // Enhanced shadow on hover
                     }}
+                    viewport={{ once: true }} // Ensure animation happens only once
                 >
                     {tech}
                 </motion.h4>
@@ -53,6 +55,3 @@ const TechStack: React.FC<TechStackProps> = ({ techStack, backgroundColor, color
 };
 
 export default TechStack;
-
-
-
