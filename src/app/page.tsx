@@ -2,14 +2,31 @@
 
 import { useEffect, useState } from 'react';
 import { NextPage } from 'next';
+import { motion, useAnimation, AnimationControls } from 'framer-motion';
 import ExperienceBlock from './components/experience-block';
 
 import avonvaleData from './data/avonvale.json';
 import premData from './data/prem.json';
 import iccData from './data/icc.json';
 
+import { getVideoById } from './lib/contentful';
+import { VideoType } from './helpers/types'; // Adjust the path according to your project structure
+
 const Home: NextPage = () => {
-  const [opacity, setOpacity] = useState(1);
+  const [videoUrl, setVideoUrl] = useState<string>('');
+  const [opacity, setOpacity] = useState<number>(1);
+  const controls: AnimationControls = useAnimation();
+
+  useEffect(() => {
+    const fetchVideo = async () => {
+      const videoData: VideoType | null = await getVideoById('4N9BFNf6IUYe7bsTaUMHMG'); // Replace with your video ID
+      if (videoData && videoData.video.fields.file.url) {
+        setVideoUrl(videoData.video.fields.file.url); // Adjust the field name based on your Contentful model
+      }
+    };
+
+    fetchVideo();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,14 +43,40 @@ const Home: NextPage = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Start animation when the component mounts
+    controls.start({ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 2, delay: 1 } }).then(() => {
+      // Animation complete
+    });
+  }, [controls]);
+
   return (
     <>
       <div>
         <section 
-          className="page flex min-h-screen items-center z-0 justify-center px-8 lg:px-48" 
-          style={{ position: 'fixed', top: 0, left: 0, width: '100%', opacity: opacity, transition: 'opacity 0.2s' }}
+          className="page fixed w-screen top-0 left-0 w-full flex min-h-screen items-center justify-center px-8 lg:px-48"
+          style={{ height: '100vh', overflow: 'hidden', opacity: opacity, transition: 'opacity 0.2s' }}
         >
-          <div>
+          {videoUrl && (
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover -z-1 opacity-70"
+              autoPlay
+              muted
+              loop
+              ref={(video) => {
+                if (video) video.playbackRate = 0.8; // Set the playback rate directly
+              }}
+            >
+              <source src={videoUrl} type="video/mp4" />
+            </video>
+          )}
+          <motion.div
+            className='z-0 max-w-screen-xl'
+            initial={{ opacity: 0, y: 50, filter: 'blur(10px)' }} // Initial state with blur
+            animate={controls} // Use framer-motion controls
+            transition={{ duration: 2 }} // Duration of the animation
+            style={{ filter: 'blur(0px)' }} // Ensure the blur effect is applied
+          >
             <h1 className="text-5xl mb-3">
               Hi, my name is{' '}
               <span className="text-violet-400 text-7xl font-semibold">Daniel</span>
@@ -45,7 +88,7 @@ const Home: NextPage = () => {
               web and mobile solutions. Passionate about innovation, I strive to deliver
               high-quality, impactful digital experiences.
             </p>
-          </div>
+          </motion.div>
         </section>
 
         <div className='relative z-1'>
@@ -72,6 +115,7 @@ const Home: NextPage = () => {
               backgroundColor={premData.backgroundColor}
               techStack={premData.techStack}
               link={premData.link}
+              alignLeft={false}
             />
           </section>
 
@@ -87,7 +131,6 @@ const Home: NextPage = () => {
               link={iccData.link}
             />
           </section>
-
         </div>
       </div>
     </>
@@ -95,3 +138,4 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+

@@ -22,3 +22,19 @@ body {
     text-wrap: balance;
   }
 }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.relative-top {
+  position: relative;
+}
+
+.next-section {
+  margin-top: 100vh;
+}
+
