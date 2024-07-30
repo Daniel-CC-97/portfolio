@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'profile-pic': "url('/images/profile-pic-6.png')"
+        'profile-pic': "url('/images/profile-pic.png')"
       },
       opacity: {
         '30': '0.3',

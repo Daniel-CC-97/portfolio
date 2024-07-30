@@ -1,0 +1,39 @@
+{
+    "links": [
+        {
+            "link": "https://www.linkedin.com/in/danielcassell/",
+            "text": "LinkedIn",
+            "image": "/icons/linkedIn.svg"
+        },
+        {
+            "link": "https://github.com/Daniel-CC-97",
+            "text": "GitHub",
+            "image": "/icons/github.svg"
+        },
+        {
+            "link": "https://www.upwork.com/freelancers/~01c1cfaf8099d4136b?viewMode=1",
+            "text": "Upwork",
+            "image": "/icons/upwork.png"
+        },
+        {
+            "link": "/pdf/otta-profile.pdf",
+            "text": "Otta",
+            "image": "/icons/otta-icon.png"
+        },
+        {
+            "link": "/pdf/cord-profile.pdf",
+            "text": "Cord",
+            "image": "/icons/cord-icon.jpeg"
+        },
+        {
+            "link": "/pdf/Daniel-Cassell-CV.pdf",
+            "text": "CV",
+            "image": "/icons/download.svg"
+        },
+        {
+            "link": "mailto: daniel.cassell97@outlook.com",
+            "text": "Email",
+            "image": "/icons/email.svg"
+        }
+    ]
+}

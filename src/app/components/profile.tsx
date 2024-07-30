@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+'use client'
+import { useEffect, useState } from 'react';
 
 export const Profile = () => {
   const texts = ["Web Developer", "Front-end Developer"];
@@ -75,12 +76,12 @@ export const Profile = () => {
                 </p>
                 </div>
                 <div className="home-btns py-6 flex flex-wrap gap-4">
-                <a href="https://www.upwork.com/freelancers/~01c1cfaf8099d4136b">
+                <a href= "mailto: daniel.cassell97@outlook.com">
                     <button className="btn border-2 border-violet-400 text-violet-400 px-6 py-2 rounded-md hover:text-violet-300 hover:border-violet-300 transition-all duration-500">
                     let&apos;s talk
                     </button>
                 </a>
-                <a href="https://www.upwork.com/freelancers/~01c1cfaf8099d4136b">
+                <a href="https://www.upwork.com/freelancers/~01c1cfaf8099d4136b?viewMode=1">
                     <button className="btn btn-primary border-2 bg-violet-600 border-violet-600 text-white px-6 py-2 rounded-md hover:bg-violet-400 hover:border-violet-400 transition-all duration-500">
                     Hire Me
                     </button>
