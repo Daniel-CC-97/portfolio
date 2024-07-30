@@ -6,29 +6,33 @@ export const Profile = () => {
   const [typing, setTyping] = useState(true);
   const [opacity, setOpacity] = useState(1); // Initial opacity
 
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const fadeStart = 0; // Adjust based on when you want the fade to start
+    const fadeEnd = 300; // Adjust based on when you want the fade to end
+    const fadeRange = fadeEnd - fadeStart;
+
+    if (scrollTop <= fadeStart) {
+      setOpacity(1);
+    } else if (scrollTop >= fadeEnd) {
+      setOpacity(0);
+    } else {
+      const opacityValue = 1 - ((scrollTop - fadeStart) / fadeRange);
+      setOpacity(opacityValue);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const fadeStart = 0; // Adjust based on when you want the fade to start
-      const fadeEnd = 300; // Adjust based on when you want the fade to end
-      const fadeRange = fadeEnd - fadeStart;
+    // Set initial opacity based on the current scroll position
+    handleScroll();
 
-      if (scrollTop <= fadeStart) {
-        setOpacity(1);
-      } else if (scrollTop >= fadeEnd) {
-        setOpacity(0);
-      } else {
-        const opacityValue = 1 - ((scrollTop - fadeStart) / fadeRange);
-        setOpacity(opacityValue);
-      }
-    };
-
+    // Attach the scroll event listener
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, []); // Empty dependency array to run only on mount
 
   useEffect(() => {
     const typingDuration = 4000; // Duration of typing animation
