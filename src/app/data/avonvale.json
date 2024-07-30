@@ -1,6 +1,11 @@
 {
     "title": "Avonvale Bowls Club",
-    "summary": "Designed and developed a new website using Next.js and TypeScript for a Bristol-based bowls club.* Implemented a frontend architecture to enhance user experience and performance.* Integrated Contentful, a headless CMS, to manage dynamic content such as fixtures, results, news posts, and photos.* Enabled easy content updates and publishing capabilities through Contentful, ensuring flexibility and scalability for future enhancements.",
+    "summary": [
+        "Designed and developed a new website using Next.js and TypeScript for a Bristol-based bowls club.",
+        "Implemented a frontend architecture to enhance user experience and performance.",
+        "Integrated Contentful, a headless CMS, to manage dynamic content such as fixtures, results, news posts, and photos.",
+        "Enabled easy content updates and publishing capabilities through Contentful, ensuring flexibility and scalability for future enhancements."
+    ],
     "imageUrl": "/images/avonvale-logo.png",
     "backgroundColor": "#f5ac65",
     "primaryColor": "#004d79",
@@ -15,5 +20,4 @@
         "GitHub"
     ],
     "link": "https://avonvale-bowls-club.vercel.app/"
-  }
-  
+}

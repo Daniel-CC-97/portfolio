@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'profile-pic': "url('/images/profile-pic-6.png')"
+      },
+      opacity: {
+        '30': '0.3',
+        '50': '0.5',
+        '80': '0.8'
+      },
       colors: {
         violet: {
           50: '#f5f3ff',
@@ -21,6 +29,30 @@ const config: Config = {
           800: '#5b21b6',
           900: '#4c1d95',
         },
+        black: {
+          50: '#f9f9f9',
+          100: '#e5e5e5',
+          200: '#bfbfbf',
+          300: '#999999',
+          400: '#737373',
+          500: '#4d4d4d',
+          600: '#333333',
+          700: '#1a1a1a',
+          800: '#0d0d0d',
+          900: '#000000',
+        },
+        blue: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
+        },
       },
     },
   },
@@ -28,3 +60,4 @@ const config: Config = {
 };
 
 export default config;
+

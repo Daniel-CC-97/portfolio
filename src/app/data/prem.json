@@ -1,18 +1,24 @@
 {
     "title": "The Premier League",
-    "summary": "Led the site's comprehensive rebranding in late 2023, encompassing design overhauls across all pages.* Implemented new features with a focus on enhancing the Match Centre functionality and overall site performance and readability.* Developed key pages independently, including the Awards Page and Man of the Match Page, ensuring seamless integration with existing site architecture and design standards.* Contributed to the design and full-stack development of various small-scale features, such as promotional campaigns for new Premier League initiatives and features, enhancing user engagement and site usability.* Engaged in ongoing bug fixing and support for Business As Usual (BAU) tasks, maintaining site stability and performance.",
+    "summary": [
+      "Led the Premier League's comprehensive rebranding in late 2023, including design overhauls across all pages.",
+      "Implemented new features to enhance Match Centre functionality, site performance, and readability.",
+      "Developed key pages independently, such as the Awards Page and Man of the Match Page, ensuring seamless integration with existing site architecture and design standards.",
+      "Contributed to the design and full-stack development of small-scale features, including promotional campaigns for new Premier League initiatives, enhancing user engagement and site usability.",
+      "Provided ongoing bug fixing and support for Business As Usual (BAU) tasks, maintaining site stability and performance."
+    ],
     "imageUrl": "/images/file.png",
     "backgroundColor": "#37003C",
     "primaryColor": "#6CB2F9",
     "primaryColorLight": "#ADD4F1",
     "techStack": [
-        "JavaScript",
-        "RestAPI",
-        "SCSS",
-        "Freemarker",
-        "Jira",
-        "BitBucket",
-        "Agile"
+      "JavaScript",
+      "RestAPI",
+      "SCSS",
+      "Freemarker",
+      "Jira",
+      "BitBucket",
+      "Agile"
     ],
     "link": "https://www.premierleague.com/"
   }

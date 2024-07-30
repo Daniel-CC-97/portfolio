@@ -23,18 +23,64 @@ body {
   }
 }
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+/* global.css or styles.css */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-.relative-top {
+@keyframes deleting {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.typing-container {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
   position: relative;
+  transition: width 0.5s ease; /* Smooth transition */
 }
 
-.next-section {
-  margin-top: 100vh;
+.typing {
+  border-right: 0.15em solid;
+  animation: typing 2s steps(30, end) 1s 1 normal both, blink 0.75s step-end infinite;
 }
+
+.deleting {
+  border-right: 0.15em solid;
+  animation: deleting 1s steps(30, end) 1s 1 normal both;
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+
+/* Custom styles for the blur effect */
+@layer components {
+  .bg-blur-lg {
+    backdrop-filter: blur(8px); /* Adjust the blur radius */
+    -webkit-backdrop-filter: blur(8px); /* For Safari support */
+  }
+}
+
+
+
+
+
+
 
