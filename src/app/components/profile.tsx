@@ -47,7 +47,7 @@ export const Profile = () => {
       clearTimeout(typingTimeout);
       clearTimeout(deletingTimeout);
     };
-  }, [currentText, typing]);
+  }, [currentText, typing, texts.length]);
 
   return (
     <div className="fixed">
@@ -56,7 +56,7 @@ export const Profile = () => {
             <div className="container px-6 text-gray-200 max-w-7xl relative z-20">
             <div className="content max-w-xl flex flex-col gap-0">
                 <h1 className="title text-4xl font-semibold">
-                <span className="text-3xl font-light text-gray-400">Hi,</span> <br /> I'm Daniel Cassell
+                <span className="text-3xl font-light text-gray-400">Hi,</span> <br /> I&apos;m Daniel Cassell
                 </h1>
                 <div className="subtitle relative h-20 w-fit overflow-hidden">
                 <div
@@ -73,7 +73,7 @@ export const Profile = () => {
                 <div className="home-btns py-6 flex flex-wrap gap-4">
                 <a href="https://www.upwork.com/freelancers/~01c1cfaf8099d4136b">
                     <button className="btn border-2 border-violet-400 text-violet-400 px-6 py-2 rounded-md hover:text-violet-300 hover:border-violet-300 transition-all duration-500">
-                    let's talk
+                    let&apos;s talk
                     </button>
                 </a>
                 <a href="https://www.upwork.com/freelancers/~01c1cfaf8099d4136b">
