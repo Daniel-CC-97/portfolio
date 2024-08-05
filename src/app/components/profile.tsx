@@ -90,7 +90,7 @@ export const Profile = () => {
             </div>
             </div>
         </div>
-        <div className='w-1/2 h-screen bg-profile-pic bg-left bg-no-repeat hidden sm:block'></div>
+        <div className='w-1/2 h-screen bg-profile-pic bg-left bg-cover bg-no-repeat hidden sm:block'></div>
         </div>
 
     </div>
