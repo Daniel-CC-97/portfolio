@@ -1,25 +1,25 @@
 {
-    "title": "The ICC",
-    "summary": [
-        "Heavily involved in the migration of their main website from vanilla JavaScript to Preact, enhancing performance and maintainability.",
-        "Developed a fully customizable white-label site framework, allowing ICC to tailor it for each specific tournament and event.",
-        "Designed and implemented Criiio, a microsite aimed at promoting cricket among children, fostering engagement and participation."
-    ],
-    "imageUrl": "/images/ICC-logo.webp",
-    "backgroundColor": "#00175F",
-    "primaryColor": "#FA0CEB",
-    "primaryColorLight": "#FFB5D6",
-    "techStack": [
-        "Preact",
-        "JavaScript",
-        "RestAPI",
-        "Figma",
-        "SCSS",
-        "Animate.css",
-        "Git",
-        "BitBucket",
-        "Agile",
-        "Jira"
-    ],
-    "link": "https://www.icc-cricket.com/"
+  "title": "The ICC",
+  "summary": [
+    "Website Migration and Framework Innovation: Orchestrated the migration of the ICC site to Preact, boosting performance and maintainability. Engineered a white-label site framework for tournaments, reducing reskinning time from 1 month to 1 day.",
+    "Youth Engagement Microsite: Designed and developed Criiio, an interactive microsite that increased youth cricket engagement by 50%, delivering personalised experiences for young athletes.",
+    "Campaign Collaboration and Documentation: Partnered with marketing teams to create UX/UI strategies for promotional campaigns, increasing peak-season traffic by 15%. Established documentation standards that improved onboarding efficiency by 40%."
+  ],
+  "imageUrl": "/images/ICC-logo.webp",
+  "backgroundColor": "#00175F",
+  "primaryColor": "#FA0CEB",
+  "primaryColorLight": "#FFB5D6",
+  "techStack": [
+    "Preact",
+    "JavaScript",
+    "RestAPI",
+    "Figma",
+    "SCSS",
+    "Animate.css",
+    "Git",
+    "BitBucket",
+    "Agile",
+    "Jira"
+  ],
+  "link": "https://www.icc-cricket.com/"
 }

@@ -1,23 +1,22 @@
 {
-    "title": "Avonvale Bowls Club",
-    "summary": [
-        "Designed and developed a new website using Next.js and TypeScript for a Bristol-based bowls club.",
-        "Implemented a frontend architecture to enhance user experience and performance.",
-        "Integrated Contentful, a headless CMS, to manage dynamic content such as fixtures, results, news posts, and photos.",
-        "Enabled easy content updates and publishing capabilities through Contentful, ensuring flexibility and scalability for future enhancements."
-    ],
-    "imageUrl": "/images/avonvale-logo.png",
-    "backgroundColor": "#f5ac65",
-    "primaryColor": "#004d79",
-    "primaryColorLight": "#335a7d",
-    "techStack": [
-        "NextJS",
-        "React",
-        "TypeScript",
-        "Framer-Motion",
-        "Contentful",
-        "Tailwind",
-        "GitHub"
-    ],
-    "link": "https://avonvale-bowls-club.vercel.app/"
+  "title": "Avonvale Bowls Club",
+  "summary": [
+    "Frontend Development and Architecture: Designed and built a new website using Next.js and TypeScript, focusing on creating a visually appealing, efficient, and accessible user experience. Developed a robust frontend architecture that ensures the website is both scalable and maintainable, aligning with modern web standards and practices.",
+    "Dynamic Content Management: Integrated Contentful, a headless CMS, to manage dynamic content. This solution provided flexibility for future enhancements and enabled the editorial team to post a large volume of content daily with ease.",
+    "Clean Coding Practices: Applied principles of clean coding, including test-driven development (TDD), modular architecture, and adherence to SOLID principles, to maintain a well-organised and efficient codebase, ensuring scalability and effective collaboration."
+  ],
+  "imageUrl": "/images/avonvale-logo.png",
+  "backgroundColor": "#f5ac65",
+  "primaryColor": "#004d79",
+  "primaryColorLight": "#335a7d",
+  "techStack": [
+    "NextJS",
+    "React",
+    "TypeScript",
+    "Framer-Motion",
+    "Contentful",
+    "Tailwind",
+    "GitHub"
+  ],
+  "link": "https://avonvale-bowls-club.vercel.app/"
 }

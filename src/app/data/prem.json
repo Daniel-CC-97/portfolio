@@ -1,25 +1,22 @@
 {
-    "title": "The Premier League",
-    "summary": [
-      "Led the Premier League's comprehensive rebranding in late 2023, including design overhauls across all pages.",
-      "Implemented new features to enhance Match Centre functionality, site performance, and readability.",
-      "Developed key pages independently, such as the Awards Page and Man of the Match Page, ensuring seamless integration with existing site architecture and design standards.",
-      "Contributed to the design and full-stack development of small-scale features, including promotional campaigns for new Premier League initiatives, enhancing user engagement and site usability.",
-      "Provided ongoing bug fixing and support for Business As Usual (BAU) tasks, maintaining site stability and performance."
-    ],
-    "imageUrl": "/images/prem-logo.png",
-    "backgroundColor": "#37003C",
-    "primaryColor": "#6CB2F9",
-    "primaryColorLight": "#ADD4F1",
-    "techStack": [
-      "JavaScript",
-      "RestAPI",
-      "SCSS",
-      "Freemarker",
-      "Jira",
-      "BitBucket",
-      "Agile"
-    ],
-    "link": "https://www.premierleague.com/"
-  }
-  
+  "title": "The Premier League",
+  "summary": [
+    "Comprehensive Rebranding and Feature Development: Led the complete redesign of the Premier League site, enhancing performance, accessibility, and user experience using modern web technologies. Key features included the Awards Page and Man of the Match Page.",
+    "Collaborative Full-Stack Contributions: Worked across frontend and backend, aligning with product managers, designers, and developers to deliver scalable, user-centric solutions.",
+    "Continuous Optimisation: Maintained site stability through continuous deployment practices, addressing bugs and optimising code for performance."
+  ],
+  "imageUrl": "/images/prem-logo.png",
+  "backgroundColor": "#37003C",
+  "primaryColor": "#6CB2F9",
+  "primaryColorLight": "#ADD4F1",
+  "techStack": [
+    "JavaScript",
+    "RestAPI",
+    "SCSS",
+    "Freemarker",
+    "Jira",
+    "BitBucket",
+    "Agile"
+  ],
+  "link": "https://www.premierleague.com/"
+}
