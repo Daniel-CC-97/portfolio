@@ -36,7 +36,7 @@ export const Profile = () => {
   }, []);
 
   return (
-    <div className="flex p-6  content-center items-center justify-center flex-col-reverse lg:min-h-screen lg:justify-between lg:items-center lg:flex-row">
+    <div className="flex content-center items-center justify-center flex-col-reverse lg:min-h-screen lg:justify-between lg:items-center lg:flex-row">
       <div className="content max-w-xl flex flex-col gap-0">
         <h1 className="title text-4xl font-semibold">
           <span className="text-3xl font-light text-gray-400">Hi,</span> <br />{" "}

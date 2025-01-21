@@ -10,7 +10,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
   const { title, summary, imageUrl, techStack, link } = data;
 
   return (
-    <div className="p-6">
+    <div className="my-6">
       <a href={link} className="flex items-center space-x-4">
         <h3 className="font-bold text-violet-500 text-2xl hover:text-violet-400">
           {title}
