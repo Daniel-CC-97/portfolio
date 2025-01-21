@@ -15,13 +15,20 @@ const Home: NextPage = () => {
         {/* <div className="h-screen z-1"></div> */}
 
         <div className="min-h-screen z-10 relative">
-          <h2 className="text-3xl text-gray-400 font-bold inline-block border-t border-b border-violet-400 py-1">
+          <h2 className="text-3xl text-gray-400 mb-6 font-bold inline-block">
             Professional Experience
           </h2>
+          <hr className="border-grey-400 opacity-30"></hr>
 
           <WorkExperience data={PremData}></WorkExperience>
+          <hr className="border-grey-400 opacity-30"></hr>
+
           <WorkExperience data={ICCData}></WorkExperience>
+          <hr className="border-grey-400 opacity-30"></hr>
+
           <WorkExperience data={AvonvaleBowlsData}></WorkExperience>
+          <hr className="border-grey-400 opacity-30"></hr>
+
           <ContactMe></ContactMe>
         </div>
       </div>

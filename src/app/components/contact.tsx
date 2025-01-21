@@ -4,7 +4,7 @@ const ContactMe = () => {
   const { links } = contactData;
 
   return (
-    <div>
+    <div className="mt-6">
       <h2 className="text-violet-400 font-bold text-2xl text-center md:text-start">
         Info:
       </h2>
