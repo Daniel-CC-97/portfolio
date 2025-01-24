@@ -1,9 +1,11 @@
 {
   "title": "Avonvale Bowls Club",
   "summary": [
-    "Frontend Development and Architecture: Designed and built a new website using Next.js and TypeScript, focusing on creating a visually appealing, efficient, and accessible user experience. Developed a robust frontend architecture that ensures the website is both scalable and maintainable, aligning with modern web standards and practices.",
-    "Dynamic Content Management: Integrated Contentful, a headless CMS, to manage dynamic content. This solution provided flexibility for future enhancements and enabled the editorial team to post a large volume of content daily with ease.",
-    "Clean Coding Practices: Applied principles of clean coding, including test-driven development (TDD), modular architecture, and adherence to SOLID principles, to maintain a well-organised and efficient codebase, ensuring scalability and effective collaboration."
+    "Frontend Development: Designed and developed a responsive website using Next.js and TypeScript, delivering a visually appealing and accessible user experience.",
+    "Architecture and Scalability: Built a scalable, maintainable frontend architecture aligned with modern web standards to support future enhancements.",
+    "API Integration: Implemented RESTful API services, enabling efficient and reliable data exchange between frontend and backend systems.",
+    "CMS Integration: Integrated Contentful CMS, streamlining content management and empowering the editorial team to update over 200 monthly posts effortlessly.",
+    "Clean Code and TDD: Adhered to clean coding practices, including test-driven development (TDD) and modular architecture, to ensure a maintainable and efficient codebase."
   ],
   "imageUrl": "/images/avonvale-logo.png",
   "backgroundColor": "#f5ac65",

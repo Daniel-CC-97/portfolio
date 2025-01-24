@@ -1,9 +1,10 @@
 {
   "title": "The Premier League",
   "summary": [
-    "Comprehensive Rebranding and Feature Development: Led the complete redesign of the Premier League site, enhancing performance, accessibility, and user experience using modern web technologies. Key features included the Awards Page and Man of the Match Page.",
-    "Collaborative Full-Stack Contributions: Worked across frontend and backend, aligning with product managers, designers, and developers to deliver scalable, user-centric solutions.",
-    "Continuous Optimisation: Maintained site stability through continuous deployment practices, addressing bugs and optimising code for performance."
+    "Premier League Rebranding: Led the redesign of the Premier League site, achieving significant improvements in accessibility, performance, and user engagement.",
+    "Feature Development: Delivered high-impact pages, such as the Awards and Man of the Match pages, driving user interaction and retention.",
+    "Cross-Functional Collaboration: Partnered with product managers, designers, and backend developers to deliver scalable, user-centric features.",
+    "Documentation and Mentorship: Standardised documentation, improving onboarding efficiency by 40%. Mentored junior developers through pair programming, pull request reviews, and skill-sharing sessions."
   ],
   "imageUrl": "/images/prem-logo.png",
   "backgroundColor": "#37003C",

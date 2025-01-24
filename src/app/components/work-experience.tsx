@@ -46,7 +46,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
         {techStack.map((tech, index) => (
           <div
             key={index}
-            className="p-2 bg-violet-400 text-black-900 rounded font-bold"
+            className="py-1 px-2 bg-violet-400 text-sm text-black-900 rounded font-bold"
           >
             {tech}
           </div>

@@ -5,20 +5,18 @@ const ContactMe = () => {
 
   return (
     <div className="mt-6">
-      <h2 className="text-violet-400 font-bold text-2xl text-center md:text-start">
-        Info:
-      </h2>
-      <div className="flex flex-wrap justify-center md:justify-start gap-4">
+      <h2 className="text-violet-400 font-bold text-2xl">Info:</h2>
+      <div className="flex flex-wrap gap-4">
         {links.map((link) => (
           <a
             key={link.text}
             href={link.link}
             target="_blank"
-            className="text-gray-400 flex flex-col items-center hover:text-violet-500"
+            className="text-gray-400 flex items-center gap-1 hover:text-violet-500"
           >
             <h1>{link.text}</h1>
             <img
-              className="rounded h-[48px] w-[48px]"
+              className="rounded h-[24px] w-[24px]"
               src={link.image}
               alt="Description of SVG"
             />

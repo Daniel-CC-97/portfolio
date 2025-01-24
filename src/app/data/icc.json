@@ -1,9 +1,10 @@
 {
   "title": "The ICC",
   "summary": [
-    "Website Migration and Framework Innovation: Orchestrated the migration of the ICC site to Preact, boosting performance and maintainability. Engineered a white-label site framework for tournaments, reducing reskinning time from 1 month to 1 day.",
-    "Youth Engagement Microsite: Designed and developed Criiio, an interactive microsite that increased youth cricket engagement by 50%, delivering personalised experiences for young athletes.",
-    "Campaign Collaboration and Documentation: Partnered with marketing teams to create UX/UI strategies for promotional campaigns, increasing peak-season traffic by 15%. Established documentation standards that improved onboarding efficiency by 40%."
+    "Framework Innovation: Developed a white-label site framework for ICC tournaments, reducing reskinning time by 97% (1 month to 1 day).",
+    "Microsite Development: Created Criiio, a youth engagement microsite, providing personalised experiences and increasing engagement among young athletes.",
+    "Site Migration: Migrated the ICC site to Preact, enhancing performance and simplifying maintenance workflows.",
+    "Continuous Deployment: Maintained site stability and optimised performance through continuous deployment practices."
   ],
   "imageUrl": "/images/ICC-logo.webp",
   "backgroundColor": "#00175F",
