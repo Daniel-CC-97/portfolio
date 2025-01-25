@@ -11,7 +11,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
 
   return (
     <div className="my-6">
-      <a href={link} className="flex items-center space-x-4">
+      <a href={link} target="_blank" className="flex items-center space-x-4">
         <h3 className="font-bold text-violet-500 text-2xl hover:text-violet-400">
           {title}
         </h3>
