@@ -15,7 +15,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
         <h3 className="font-bold text-violet-500 text-2xl hover:text-violet-400">
           {title}
         </h3>
-        {imageUrl ? (
+        {imageUrl && (
           <Image
             src={imageUrl}
             height={50}
@@ -23,8 +23,6 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
             alt={`Logo image for ${title}`}
             className="inline-block"
           />
-        ) : (
-          ""
         )}
       </a>
       <div className="mt-2 text-gray-400">

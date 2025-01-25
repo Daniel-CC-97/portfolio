@@ -1,0 +1,14 @@
+{
+  "title": "Typing Test",
+  "summary": [
+    "Frontend Development: Built a typing test application using Next.js and React, ensuring a responsive and interactive experience across devices.",
+    "State Management: Utilised React hooks (`useState`, `useEffect`, `useRef`) for managing component state, tracking the current quote, typed text, and mistakes, ensuring smooth updates and dynamic user interaction.",
+    "Dynamic Content Fetching: Integrated asynchronous functions to fetch random quotes based on user-selected length, utilising a custom quote API for flexibility in content selection.",
+    "Keyboard Interaction: Implemented a custom keyboard component with key event handling to simulate typing interactions, including handling key presses, backspace, and managing character inputs in real-time.",
+    "UI/UX Design: Utilised Tailwind CSS for a minimalistic, responsive and visually appealing layout, ensuring a seamless experience on both desktop and mobile devices with proper focus management and mobile keyboard handling.",
+    "Performance Optimisation: Optimised app performance by limiting re-renders and managing state efficiently, ensuring smooth interaction even during high-frequency updates (e.g., key presses)."
+  ],
+  "imageUrl": "",
+  "techStack": ["React", "Next.js", "JavaScript", "RESTApi", "Tailwind"],
+  "link": "https://typing-test-game-azure.vercel.app/"
+}

@@ -8,9 +8,9 @@
   ],
   "imageUrl": "",
   "techStack": [
-    "TypeScript",
     "React",
     "Next.js",
+    "TypeScript",
     "Axios",
     "Tailwind",
     "Jotai",
