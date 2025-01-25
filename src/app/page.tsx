@@ -5,6 +5,7 @@ import WorkExperience from "./components/work-experience";
 import PremData from "./data/prem.json";
 import ICCData from "./data/icc.json";
 import AvonvaleBowlsData from "./data/avonvale.json";
+import WeatherAppData from "./data/projects/weather-app.json";
 import ContactMe from "./components/contact";
 
 const Home: NextPage = () => {
@@ -15,19 +16,27 @@ const Home: NextPage = () => {
         {/* <div className="h-screen z-1"></div> */}
 
         <div className="min-h-screen z-10 relative">
-          <h2 className="text-3xl text-gray-400 mb-6 font-bold inline-block">
+          <hr className="border-grey-400 opacity-30"></hr>
+
+          <h2 className="text-3xl text-gray-400 my-6 font-bold inline-block">
             Professional Experience
           </h2>
-          <hr className="border-grey-400 opacity-30"></hr>
+          <div className="">
+            <hr className="border-grey-400 opacity-30"></hr>
 
-          <WorkExperience data={PremData}></WorkExperience>
-          <hr className="border-grey-400 opacity-30"></hr>
+            <WorkExperience data={PremData}></WorkExperience>
 
-          <WorkExperience data={ICCData}></WorkExperience>
-          <hr className="border-grey-400 opacity-30"></hr>
+            <WorkExperience data={ICCData}></WorkExperience>
 
-          <WorkExperience data={AvonvaleBowlsData}></WorkExperience>
+            <WorkExperience data={AvonvaleBowlsData}></WorkExperience>
+          </div>
+
           <hr className="border-grey-400 opacity-30"></hr>
+          <h2 className="text-3xl text-gray-400 my-6 font-bold inline-block">
+            Personal Projects
+          </h2>
+          <hr className="border-grey-400 opacity-30"></hr>
+          <WorkExperience data={WeatherAppData}></WorkExperience>
 
           <ContactMe></ContactMe>
         </div>

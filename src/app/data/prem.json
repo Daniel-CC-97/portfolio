@@ -7,9 +7,6 @@
     "Documentation and Mentorship: Standardised documentation, improving onboarding efficiency by 40%. Mentored junior developers through pair programming, pull request reviews, and skill-sharing sessions."
   ],
   "imageUrl": "/images/prem-logo.png",
-  "backgroundColor": "#37003C",
-  "primaryColor": "#6CB2F9",
-  "primaryColorLight": "#ADD4F1",
   "techStack": [
     "JavaScript",
     "RestAPI",

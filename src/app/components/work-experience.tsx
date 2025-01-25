@@ -15,13 +15,17 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
         <h3 className="font-bold text-violet-500 text-2xl hover:text-violet-400">
           {title}
         </h3>
-        <Image
-          src={imageUrl}
-          height={50}
-          width={50}
-          alt={`Logo image for ${title}`}
-          className="inline-block"
-        />
+        {imageUrl ? (
+          <Image
+            src={imageUrl}
+            height={50}
+            width={50}
+            alt={`Logo image for ${title}`}
+            className="inline-block"
+          />
+        ) : (
+          ""
+        )}
       </a>
       <div className="mt-2 text-gray-400">
         {summary.map((summaryPoint, index) => {

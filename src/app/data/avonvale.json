@@ -8,9 +8,6 @@
     "Clean Code and TDD: Adhered to clean coding practices, including test-driven development (TDD) and modular architecture, to ensure a maintainable and efficient codebase."
   ],
   "imageUrl": "/images/avonvale-logo.png",
-  "backgroundColor": "#f5ac65",
-  "primaryColor": "#004d79",
-  "primaryColorLight": "#335a7d",
   "techStack": [
     "NextJS",
     "React",

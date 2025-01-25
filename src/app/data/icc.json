@@ -7,9 +7,6 @@
     "Continuous Deployment: Maintained site stability and optimised performance through continuous deployment practices."
   ],
   "imageUrl": "/images/ICC-logo.webp",
-  "backgroundColor": "#00175F",
-  "primaryColor": "#FA0CEB",
-  "primaryColorLight": "#FFB5D6",
   "techStack": [
     "Preact",
     "JavaScript",

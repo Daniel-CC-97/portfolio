@@ -5,8 +5,12 @@ const ContactMe = () => {
 
   return (
     <div className="mt-6">
-      <h2 className="text-violet-400 font-bold text-2xl">Info:</h2>
-      <div className="flex flex-wrap gap-4">
+      <hr className="border-grey-400 opacity-30"></hr>
+      <h2 className="text-3xl text-gray-400 my-6 font-bold inline-block">
+        Information
+      </h2>
+      <hr className="border-grey-400 opacity-30"></hr>
+      <div className="flex flex-wrap my-6 gap-4">
         {links.map((link) => (
           <a
             key={link.text}
