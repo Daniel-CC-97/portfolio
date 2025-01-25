@@ -9,22 +9,36 @@ interface WorkExperienceProps {
 const WorkExperience: React.FC<WorkExperienceProps> = ({ data }) => {
   const { title, summary, imageUrl, techStack, link } = data;
 
+  const content = (
+    <>
+      <h3
+        className={`font-bold text-violet-500 text-2xl ${
+          link ? "hover:text-violet-400 cursor-pointer" : ""
+        }`}
+      >
+        {title}
+      </h3>
+      {imageUrl && (
+        <Image
+          src={imageUrl}
+          height={50}
+          width={50}
+          alt={`Logo image for ${title}`}
+          className="inline-block"
+        />
+      )}
+    </>
+  );
+
   return (
     <div className="my-6">
-      <a href={link} target="_blank" className="flex items-center space-x-4">
-        <h3 className="font-bold text-violet-500 text-2xl hover:text-violet-400">
-          {title}
-        </h3>
-        {imageUrl && (
-          <Image
-            src={imageUrl}
-            height={50}
-            width={50}
-            alt={`Logo image for ${title}`}
-            className="inline-block"
-          />
-        )}
-      </a>
+      {link ? (
+        <a href={link} target="_blank" className="flex items-center space-x-4">
+          {content}
+        </a>
+      ) : (
+        <div className="flex items-center space-x-4">{content}</div>
+      )}
       <div className="mt-2 text-gray-400">
         {summary.map((summaryPoint, index) => {
           const colonIndex = summaryPoint.indexOf(":");

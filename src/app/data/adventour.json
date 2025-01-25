@@ -1,0 +1,18 @@
+{
+  "title": "Adventour",
+  "summary": [
+    "Frontend Development: Led React Native development to create interactive city tours, enhancing app responsiveness and user engagement.",
+    "Database Optimisation: Designed and optimised PostgreSQL databases with Sequelize and Express, improving data retrieval performance for seamless tour management.",
+    "State Management: Implemented Redux for state management and integrated RESTful APIs, streamlining data interactions."
+  ],
+  "imageUrl": "",
+  "techStack": [
+    "React Native",
+    "TypeScript",
+    "Redux",
+    "PostgresSQL",
+    "Sequelize",
+    "Express"
+  ],
+  "link": ""
+}

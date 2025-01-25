@@ -2,9 +2,10 @@ import { NextPage } from "next";
 import { Profile } from "./components/profile";
 import WorkExperience from "./components/work-experience";
 
+import AvonvaleBowlsData from "./data/avonvale.json";
 import PremData from "./data/prem.json";
 import ICCData from "./data/icc.json";
-import AvonvaleBowlsData from "./data/avonvale.json";
+import AdventourData from "./data/adventour.json";
 import WeatherAppData from "./data/projects/weather-app.json";
 import TypingTestData from "./data/projects/typing-test.json";
 import ContactMe from "./components/contact";
@@ -22,15 +23,12 @@ const Home: NextPage = () => {
           <h2 className="text-3xl text-gray-400 my-6 font-bold inline-block">
             Professional Experience
           </h2>
-          <div className="">
-            <hr className="border-grey-400 opacity-30"></hr>
+          <hr className="border-grey-400 opacity-30"></hr>
 
-            <WorkExperience data={PremData}></WorkExperience>
-
-            <WorkExperience data={ICCData}></WorkExperience>
-
-            <WorkExperience data={AvonvaleBowlsData}></WorkExperience>
-          </div>
+          <WorkExperience data={AvonvaleBowlsData}></WorkExperience>
+          <WorkExperience data={PremData}></WorkExperience>
+          <WorkExperience data={ICCData}></WorkExperience>
+          <WorkExperience data={AdventourData}></WorkExperience>
 
           <hr className="border-grey-400 opacity-30"></hr>
           <h2 className="text-3xl text-gray-400 my-6 font-bold inline-block">
