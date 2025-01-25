@@ -8,6 +8,7 @@ import ICCData from "./data/icc.json";
 import AdventourData from "./data/adventour.json";
 import WeatherAppData from "./data/projects/weather-app.json";
 import TypingTestData from "./data/projects/typing-test.json";
+import ChatAppData from "./data/projects/chat-app.json";
 import ContactMe from "./components/contact";
 
 const Home: NextPage = () => {
@@ -36,6 +37,7 @@ const Home: NextPage = () => {
           </h2>
           <hr className="border-grey-400 opacity-30"></hr>
           <WorkExperience data={WeatherAppData}></WorkExperience>
+          <WorkExperience data={ChatAppData}></WorkExperience>
           <WorkExperience data={TypingTestData}></WorkExperience>
 
           <ContactMe></ContactMe>
