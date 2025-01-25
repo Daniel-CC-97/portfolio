@@ -53,12 +53,10 @@ export const Profile = () => {
         </div>
         <div className="desc py-5 flex flex-col gap-2">
           <p className="text-gray-400">
-            I am a skilled frontend developer specializing in JavaScript
-            technologies, particularly Next.js and TypeScript. With a focus on
-            creating dynamic and user-friendly applications, I bring expertise
-            in building scalable web and mobile solutions. Passionate about
-            innovation, I strive to deliver high-quality, impactful digital
-            experiences.
+            I am a skilled Frontend Developer with a strong passion for both
+            problem-solving and developing great-looking applications. I
+            specialise in JavaScript technologies and spend a lot of time
+            working with Next.JS and Typescript.
           </p>
         </div>
         <div className="home-btns py-6 flex flex-wrap gap-4">
