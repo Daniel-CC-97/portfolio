@@ -1,11 +1,9 @@
 {
   "title": "Chat Room App",
   "summary": [
-    "Frontend Development: Created a dynamic chat platform using Next.js and React, ensuring intuitive navigation and a smooth user experience.",
-    "Type-Safe Development: Utilised TypeScript to ensure robust type safety and improve code maintainability across the application.",
-    "Styling and UI Design: Designed a responsive and visually appealing interface with Tailwind CSS, focusing on simplicity and user engagement.",
-    "Real-Time Communication: Integrated WebSocket functionality with Socket.IO to enable real-time messaging and dynamic room-based chat interactions.",
-    "Server Communication: Designed and implemented efficient communication between clients and the server for scalable and reliable messaging."
+    "Dynamic Chat Platform: Developed a responsive chat app with Next.js, React, and TypeScript for smooth navigation and type-safe development.",
+    "Real-Time Communication: Implemented WebSocket functionality with Socket.IO for real-time messaging and scalable server interactions.",
+    "UI Design: Created an engaging, mobile-friendly interface using Tailwind CSS to enhance user experience."
   ],
   "imageUrl": "",
   "techStack": [

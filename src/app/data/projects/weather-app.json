@@ -1,10 +1,9 @@
 {
   "title": "Weather App",
   "summary": [
-    "Frontend Development: Built a responsive weather application using Next.js and TypeScript, ensuring a seamless and visually engaging user experience across devices.",
-    "API Integration: Utilised Axios to fetch real-time weather data from APIs, enabling accurate weather updates for user-specified locations.",
-    "State Management: Implemented Jotai for efficient and lightweight state management, streamlining data flow and enhancing application maintainability.",
-    "Geolocation and User Interaction: Integrated the browser’s navigator.geolocation API to provide location-specific weather updates, enhancing user convenience and interactivity."
+    "Frontend Development: Built a responsive weather app with Next.js and TypeScript, delivering a seamless cross-device user experience.",
+    "API Integration: Fetched real-time weather data via Axios and integrated geolocation for location-specific updates.",
+    "State Management: Streamlined data flow and maintainability using Jotai for lightweight state management."
   ],
   "imageUrl": "",
   "techStack": [
